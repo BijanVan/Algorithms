@@ -11,6 +11,19 @@ public class BinaryNode<Element> {
   public var value: Element
   public var leftChild: BinaryNode?
   public var rightChild: BinaryNode?
+  public var height = 0
+
+  public var balanceFactor: Int {
+    leftHeight - rightHeight
+  }
+
+  public var leftHeight: Int {
+    leftChild?.height ?? -1
+  }
+
+  public var rightHeight: Int {
+    rightChild?.height ?? -1
+  }
 
   public init(_ value: Element) {
     self.value = value
@@ -25,7 +38,7 @@ extension BinaryNode: CustomStringConvertible {
     }
 
     let right = rightChild?.diagram(top + "    ", top + "┌───", top + "│   ") ?? ""
-    let middle = root + "\(value)\n"
+    let middle = root + "\(value),\(height)\n"
     let left = leftChild?.diagram(bottom + "│   ", bottom + "└───", bottom + "    ") ?? ""
 
     return right + middle + left

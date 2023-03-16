@@ -82,4 +82,24 @@ class BinarySearchTreeTests: XCTestCase {
 
     XCTAssertEqual(tree, tree1)
   }
+
+  func testAVLInsert() {
+    var tree = BinarySearchTree<Int>()
+    for idx in 0..<15 {
+      tree.insert(idx)
+    }
+    print(tree)
+  }
+
+//  func testAVLRemove() {
+//    var tree = BinarySearchTree<Int>()
+//    for idx in 0..<15 {
+//      tree.insert(idx)
+//    }
+//    print(tree)
+//    _ = tree.remove(10)
+//    print(tree)
+//    _ = tree.remove(9)
+//    print(tree)
+//  }
 }

@@ -13,8 +13,14 @@
 		CD4C1BEE27CF12EB004CA88B /* TreeNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C1BED27CF12EB004CA88B /* TreeNodeTests.swift */; };
 		CD4C1BF027D1B690004CA88B /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C1BEF27D1B690004CA88B /* BinaryNode.swift */; };
 		CD4C1BF227D1B6B1004CA88B /* BinaryNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C1BF127D1B6B1004CA88B /* BinaryNodeTests.swift */; };
+		CD81D08027ED5BF90067B8A7 /* TrieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81D07F27ED5BF90067B8A7 /* TrieTests.swift */; };
+		CD81D08227F1F1570067B8A7 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81D08127F1F1570067B8A7 /* BinarySearch.swift */; };
+		CD81D08427F1F17A0067B8A7 /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81D08327F1F17A0067B8A7 /* BinarySearchTests.swift */; };
+		CD81D08827F20E380067B8A7 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81D08727F20E380067B8A7 /* Heap.swift */; };
+		CD8280EE27EB6E5A004C9AB8 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8280ED27EB6E5A004C9AB8 /* Trie.swift */; };
 		CD845BA827D9067E00355714 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD845BA727D9067E00355714 /* BinarySearchTree.swift */; };
 		CD845BAA27D9069700355714 /* BinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD845BA927D9069700355714 /* BinarySearchTreeTests.swift */; };
+		CD9D0B8427F4A50B00966854 /* HeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D0B8327F4A50B00966854 /* HeapTests.swift */; };
 		CDC4B3C327BAAB9E00CC0F52 /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC4B3B827BAAB9E00CC0F52 /* Algorithms.framework */; };
 		CDC4B3C827BAAB9E00CC0F52 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4B3C727BAAB9E00CC0F52 /* StackTests.swift */; };
 		CDC4B3D327BAAC0B00CC0F52 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4B3D227BAAC0B00CC0F52 /* Stack.swift */; };
@@ -46,8 +52,14 @@
 		CD4C1BED27CF12EB004CA88B /* TreeNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNodeTests.swift; sourceTree = "<group>"; };
 		CD4C1BEF27D1B690004CA88B /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
 		CD4C1BF127D1B6B1004CA88B /* BinaryNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNodeTests.swift; sourceTree = "<group>"; };
+		CD81D07F27ED5BF90067B8A7 /* TrieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieTests.swift; sourceTree = "<group>"; };
+		CD81D08127F1F1570067B8A7 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		CD81D08327F1F17A0067B8A7 /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
+		CD81D08727F20E380067B8A7 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		CD8280ED27EB6E5A004C9AB8 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		CD845BA727D9067E00355714 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		CD845BA927D9069700355714 /* BinarySearchTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTreeTests.swift; sourceTree = "<group>"; };
+		CD9D0B8327F4A50B00966854 /* HeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTests.swift; sourceTree = "<group>"; };
 		CDC4B3B827BAAB9E00CC0F52 /* Algorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Algorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC4B3C227BAAB9E00CC0F52 /* AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC4B3C727BAAB9E00CC0F52 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
@@ -109,6 +121,9 @@
 				CDC4B3D427BBF2A500CC0F52 /* LinkedList.swift */,
 				CD4C1BEF27D1B690004CA88B /* BinaryNode.swift */,
 				CD845BA727D9067E00355714 /* BinarySearchTree.swift */,
+				CD8280ED27EB6E5A004C9AB8 /* Trie.swift */,
+				CD81D08127F1F1570067B8A7 /* BinarySearch.swift */,
+				CD81D08727F20E380067B8A7 /* Heap.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -122,6 +137,9 @@
 				CD4C1BED27CF12EB004CA88B /* TreeNodeTests.swift */,
 				CD4C1BF127D1B6B1004CA88B /* BinaryNodeTests.swift */,
 				CD845BA927D9069700355714 /* BinarySearchTreeTests.swift */,
+				CD81D07F27ED5BF90067B8A7 /* TrieTests.swift */,
+				CD81D08327F1F17A0067B8A7 /* BinarySearchTests.swift */,
+				CD9D0B8327F4A50B00966854 /* HeapTests.swift */,
 			);
 			path = AlgorithmsTests;
 			sourceTree = "<group>";
@@ -162,7 +180,6 @@
 				CDC4B3B427BAAB9E00CC0F52 /* Sources */,
 				CDC4B3B527BAAB9E00CC0F52 /* Frameworks */,
 				CDC4B3B627BAAB9E00CC0F52 /* Resources */,
-				CDC4B3D827BC03A800CC0F52 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -199,7 +216,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					CDC4B3B727BAAB9E00CC0F52 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -246,26 +263,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		CDC4B3D827BC03A800CC0F52 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		CDC4B3B427BAAB9E00CC0F52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -273,8 +270,11 @@
 			files = (
 				CDC4B3D527BBF2A500CC0F52 /* LinkedList.swift in Sources */,
 				CDE694FF27C4128900BAC754 /* Queue.swift in Sources */,
+				CD8280EE27EB6E5A004C9AB8 /* Trie.swift in Sources */,
 				CDDBF1A627CC0B0B00C1351D /* QueueStack.swift in Sources */,
+				CD81D08227F1F1570067B8A7 /* BinarySearch.swift in Sources */,
 				CD4C1BEC27CE76BB004CA88B /* TreeNode.swift in Sources */,
+				CD81D08827F20E380067B8A7 /* Heap.swift in Sources */,
 				CD295B7727C93B5000221EC5 /* QueueRingBuffer.swift in Sources */,
 				CDC4B3D327BAAC0B00CC0F52 /* Stack.swift in Sources */,
 				CDE9A6C827C7DE140051B49E /* QueueArray.swift in Sources */,
@@ -290,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD81D08427F1F17A0067B8A7 /* BinarySearchTests.swift in Sources */,
 				CD845BAA27D9069700355714 /* BinarySearchTreeTests.swift in Sources */,
 				CDC4B3D727BBF4B900CC0F52 /* LinkedListTests.swift in Sources */,
+				CD9D0B8427F4A50B00966854 /* HeapTests.swift in Sources */,
+				CD81D08027ED5BF90067B8A7 /* TrieTests.swift in Sources */,
 				CDE6950327C422DB00BAC754 /* QueueTests.swift in Sources */,
 				CDC4B3C827BAAB9E00CC0F52 /* StackTests.swift in Sources */,
 				CD4C1BF227D1B6B1004CA88B /* BinaryNodeTests.swift in Sources */,
@@ -345,6 +348,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -409,6 +413,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -437,6 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XA84Z9Z2T7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -455,6 +461,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -465,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XA84Z9Z2T7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -484,6 +492,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZE_OBJECT_LIFETIME = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -494,6 +503,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = XA84Z9Z2T7;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -510,6 +520,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = XA84Z9Z2T7;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;

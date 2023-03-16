@@ -18,14 +18,29 @@ public struct BinarySearchTree<Element: Comparable> {
       return
     }
     var node = root
+    var stack: [BinaryNode<Element>] = []
 
     while let iterNode = node {
+      stack.append(iterNode)
       if value < iterNode.value {
         node = iterNode.leftChild
         iterNode.leftChild = node ?? BinaryNode(value)
       } else {
         node = iterNode.rightChild
         iterNode.rightChild = node ?? BinaryNode(value)
+      }
+    }
+
+    while let node = stack.popLast() {
+      node.height = max(node.leftHeight, node.rightHeight) + 1
+      if let last = stack.last {
+        if last.rightChild != nil {
+          last.rightChild = balanced(node)
+        } else {
+          last.leftChild = balanced(node)
+        }
+      } else {
+        root = balanced(node)
       }
     }
   }
@@ -46,6 +61,7 @@ public struct BinarySearchTree<Element: Comparable> {
     return false
   }
 
+  // Balancing not implemented
   public mutating func remove(_ value: Element) -> Bool {
     var node = root
     var parent: BinaryNode<Element>?
@@ -169,5 +185,66 @@ extension BinarySearchTree where Element: Hashable {
     subtree.root?.traverseInOrder { if !set.contains($0) { result = false }  }
 
     return result
+  }
+}
+
+extension BinarySearchTree {
+  private func leftRotate(_ node: BinaryNode<Element>) -> BinaryNode<Element> {
+    let pivot = node.rightChild!
+    node.rightChild = pivot.leftChild
+    pivot.leftChild = node
+
+    node.height = max(node.leftHeight, node.rightHeight) + 1
+    pivot.height = max(pivot.leftHeight, pivot.rightHeight) + 1
+
+    return pivot
+  }
+
+  private func rightRotate(_ node: BinaryNode<Element>) -> BinaryNode<Element> {
+    let pivot = node.leftChild!
+    node.leftChild = pivot.rightChild
+    pivot.rightChild = node
+
+    node.height = max(node.leftHeight, node.rightHeight) + 1
+    pivot.height = max(pivot.leftHeight, pivot.rightHeight) + 1
+
+    return pivot
+  }
+
+  private func rightLeftRotate(_ node: BinaryNode<Element>) -> BinaryNode<Element> {
+    guard let rightChild = node.rightChild else {
+      return node
+    }
+    node.rightChild = rightRotate(rightChild)
+
+    return leftRotate(node)
+  }
+
+  private func leftRightRotate(_ node: BinaryNode<Element>) -> BinaryNode<Element> {
+    guard let leftChild = node.leftChild else {
+      return node
+    }
+    node.leftChild = leftRotate(leftChild)
+
+    return rightRotate(node)
+  }
+
+  private func balanced(_ node: BinaryNode<Element>) -> BinaryNode<Element> {
+    switch node.balanceFactor {
+    case 2:
+      if node.leftChild?.balanceFactor == -1 {
+        return leftRightRotate(node)
+      } else {
+        return rightRotate(node)
+      }
+    case -2:
+      if node.rightChild?.balanceFactor == 1 {
+        return rightLeftRotate(node)
+      } else {
+        return leftRotate(node)
+      }
+    default:
+      return node
+    }
   }
 }
